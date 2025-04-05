@@ -64,13 +64,47 @@ form{
 button{
   text-transform: capitalize;
 }
+.error{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 200px;
+   flex-direction: column;
+}
+.error h1{
+    color:white;
+    text-decoration: underline red;
+    animation: zoom 2s infinite forwards;
+}
+@keyframes zoom {
+  from{
+    scale:0.5;
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+    scale: 1.3;
+  }
+}
+
+.gif{
+  width: 50%;
+  height: 500px;
+}
+.gif > img{
+  width: 100%;
+  height:100%;
+}
 @media screen and (max-width: 700px) and (min-width:300px) {
   .img-holder{
-    width: 130px;
-    height: 130px;
+    width: 80%;
   }
   .cell{
     gap: 5px;
+  }
+  .gif{
+     width: 100%;
   }
 }
 @media screen and (max-width: 900px) and (min-width:700px) {
